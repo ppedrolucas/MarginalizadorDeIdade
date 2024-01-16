@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Marginalizador de Idade com JS</title>
+  </head>
+  <body>
+    <header>
+      <h1>Marginalizador de imagem</h1>
+    </header>
+    <section>
+      <div>
+        <p>
+          Ano de nascimento:
+          <input type="number" name="txtano" id="txtano" />
+        </p>
+        <p>
+          Sexo:
+          <input type="radio" name="radsex" id="masc" checked />
+          <label for="masc">Masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+        <p>
+          <button onclick="verificar()">Verificar</button>
+        </p>
+      </div>
+      <div id="result">
+        Preencha os dados acima para obter o seu resultado c:
+      </div>
+    </section>
+    <footer>
+      <p>&copy; AWP enterteiment</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
