@@ -1,34 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap");
 :root {
-  --color: #f3f3f3;
-  --bg-color: #040d12;
-  --color-2: #232d3f;
-  --shadow: #0f0f0f;
+  --color: #e5e5e5;
+  --bg-color: #343434;
+  --color-2: #404040;
+  --shadow: #1f1f1f;
 }
 body {
   font-family: "Josefin Sans", sans-serif;
   background: var(--bg-color);
   color: var(--color);
+  display: grid;
+  place-items: center;
 }
 header {
   text-align: center;
 }
 section {
+  display: grid;
+  gap: 16px;
   background: var(--color-2);
   color: var(--color);
   border-radius: 8px;
   padding: 16px;
-  width: 500px;
+  width: 512px;
   margin: auto;
   box-shadow: 4px 4px 8px var(--shadow);
+}
+.form {
+  display: grid;
+  gap: 16px;
+}
+#txtano {
+  background: var(--bg-color);
+  color: var(--color);
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
 }
 button {
   padding: 8px;
   border-radius: 4px;
   border: none;
-  color: #005b41;
-  background: transparent;
-  border: 1px solid #005b41;
+  color: var(--color);
+  background: #005b41;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 img {
   border-radius: 50%;
@@ -36,4 +52,15 @@ img {
 }
 footer {
   text-align: center;
+}
+@media(max-width: 768px){
+  h1{
+    font-size: 1.5rem;
+  }
+  section{
+    width: 420px;
+  }
+  img{
+    height: auto;
+  }
 }
