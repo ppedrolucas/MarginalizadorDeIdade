@@ -53,14 +53,14 @@ img {
 footer {
   text-align: center;
 }
-@media(max-width: 768px){
-  h1{
+@media (max-width: 768px) {
+  h1 {
     font-size: 1.5rem;
   }
-  section{
-    width: 420px;
+  section {
+    width: 425px;
   }
-  img{
-    height: auto;
+  img {
+    height: 200px;
   }
 }
